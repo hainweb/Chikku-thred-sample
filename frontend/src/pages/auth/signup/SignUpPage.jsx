@@ -1,4 +1,4 @@
-/* import { Link } from "react-router-dom";
+ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 import XSvg from "../../../components/svgs/X";
@@ -60,7 +60,7 @@ const SignUpPage = () => {
 	};
 
 	return (
-		<div className='max-w-screen-xl mx-auto flex h-screen px-10'>
+	/*	<div className='max-w-screen-xl mx-auto flex h-screen px-10'>
 			<div className='flex-1 hidden lg:flex items-center  justify-center'>
 				<XSvg className='lg:w-2/3 fill-white' />
 			</div>
@@ -126,7 +126,10 @@ const SignUpPage = () => {
 					</Link>
 				</div>
 			</div>
-		</div>
+		</div> */
+		<div className='max-w-screen-xl mx-auto flex h-screen px-10'>
+		 <h3>Signup is closed </h3>
+			</div>
 	);
 };
-export default SignUpPage;   */ <h3>Signup is closed </h3>
+export default SignUpPage;   
