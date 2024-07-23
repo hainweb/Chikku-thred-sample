@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+/* import { Link } from "react-router-dom";
 import { useState } from "react";
 
 import XSvg from "../../../components/svgs/X";
@@ -44,7 +44,7 @@ const SignUpPage = () => {
 			toast.success("Account created successfully");
 
 			{
-				/* Added this line below, after recording the video. I forgot to add this while recording, sorry, thx. */
+				
 			}
 			queryClient.invalidateQueries({ queryKey: ["authUser"] });
 		},
@@ -129,4 +129,4 @@ const SignUpPage = () => {
 		</div>
 	);
 };
-export default SignUpPage;
+export default SignUpPage;   */ <h3>Signup is closed </h3>
