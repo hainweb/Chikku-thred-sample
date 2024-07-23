@@ -127,7 +127,7 @@ const SignUpPage = () => {
 				</div>
 			</div>
 		</div> */
-		<div className='max-w-screen-xl mx-auto flex h-screen px-10'>
+		<div className='max-w-screen-xl mx-auto flex h-screen px-10 mt-200'>
 		 <h3>Signup is closed </h3>
 			</div>
 	);
