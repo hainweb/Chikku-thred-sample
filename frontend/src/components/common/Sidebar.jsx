@@ -69,6 +69,18 @@ const Sidebar = () => {
 							<span className='text-lg hidden md:block'>Profile</span>
 						</Link>
 					</li>
+
+					<li className='flex justify-center md:justify-start'>
+						<div className='flex gap-3 items-center hover:bg-stone-900 transition-all rounded-full duration-300 py-2 pl-2 pr-4 max-w-fit cursor-pointer'>
+							<img
+								src="https://cdn-icons-png.freepik.com/256/15707/15707917.png?semt=ais_hybrid"
+								alt="WhatsApp Icon"
+								className='w-7 rounded-full' // Adjust the size and make it fully rounded
+							/>
+							<span className='text-lg hidden md:block'>WhatsApp</span>
+						</div>
+
+					</li>
 				</ul>
 				{authUser && (
 					<Link
