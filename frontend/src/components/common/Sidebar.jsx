@@ -77,7 +77,7 @@ const Sidebar = () => {
 
 					<li className='flex justify-center md:justify-start'>
 						<a
-							href="https://wa.me/1234567890?text=Hello!%20How%20can%20I%20help%20you?" // Replace with your phone number and message 
+							href="https://wa.me/7306370344?text=Hello!%20How%20can%20I%20help%20you?" // Replace with your phone number and message 
 							target="_blank"
 							rel="noopener noreferrer"
 							className='flex gap-3 items-center hover:bg-stone-900 transition-all rounded-full duration-300 py-2 pl-2 pr-4 max-w-fit cursor-pointer'
