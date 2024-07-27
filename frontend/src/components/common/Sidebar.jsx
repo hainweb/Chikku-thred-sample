@@ -8,6 +8,9 @@ import { BiLogOut } from "react-icons/bi";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import toast from "react-hot-toast";
 
+import './WhatsAppButton.css'; // Ensure to import the CSS file
+
+
 const Sidebar = () => {
 	const queryClient = useQueryClient();
 	const { mutate: logout } = useMutation({
@@ -70,17 +73,73 @@ const Sidebar = () => {
 						</Link>
 					</li>
 
-					<li className='flex justify-center md:justify-start'>
-						<div className='flex gap-3 items-center hover:bg-stone-900 transition-all rounded-full duration-300 py-2 pl-2 pr-4 max-w-fit cursor-pointer'>
-							<img
-								src="https://cdn-icons-png.freepik.com/256/15707/15707917.png?semt=ais_hybrid"
-								alt="WhatsApp Icon"
-								className='w-7 rounded-full' // Adjust the size and make it fully rounded
-							/>
-							<span className='text-lg hidden md:block'>WhatsApp</span>
-						</div>
 
+
+					<li className='flex justify-center md:justify-start'>
+						<a
+							href="https://wa.me/1234567890?text=Hello!%20How%20can%20I%20help%20you?" // Replace with your phone number and message 
+							target="_blank"
+							rel="noopener noreferrer"
+							className='flex gap-3 items-center hover:bg-stone-900 transition-all rounded-full duration-300 py-2 pl-2 pr-4 max-w-fit cursor-pointer'
+						>
+							<div className='whatsapp-icon-container'>
+								<div className='whatsapp-icon-glow'></div>
+								<img
+									src="https://cdn-icons-png.freepik.com/256/15707/15707917.png?semt=ais_hybrid"
+									alt="WhatsApp Icon"
+									className='w-7 rounded-full whatsapp-icon'
+								/>
+							</div>
+							<span className='text-lg hidden md:block'>WhatsApp</span>
+						</a>
 					</li>
+
+
+
+					
+					<li className='flex justify-center md:justify-start'>
+						<a
+							
+							href="https://www.instagram.com/ajwwwnn" // Replace with your Instagram username 	target="_blank"
+							rel="noopener noreferrer"
+							className='flex gap-3 items-center hover:bg-stone-900 transition-all rounded-full duration-300 py-2 pl-2 pr-4 max-w-fit cursor-pointer'
+						>
+							<div className='whatsapp-icon-container'>
+								<div className='whatsapp-icon-glow'></div>
+								<img
+									src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/800px-Instagram_logo_2022.svg.png" // URL to Instagram icon 
+
+									alt="WhatsApp Icon"
+									className='w-7 rounded-full whatsapp-icon'
+								/>
+							</div>
+							<span className='text-lg hidden md:block'>Instagram</span>
+						</a>
+					</li>
+
+					<li className='flex justify-center md:justify-start'>
+						<a
+							
+							href="https://t.me/ajwwwnn" // Replace with your Telegram username 
+							rel="noopener noreferrer"
+							className='flex gap-3 items-center hover:bg-stone-900 transition-all rounded-full duration-300 py-2 pl-2 pr-4 max-w-fit cursor-pointer'
+						>
+							<div className='whatsapp-icon-container'>
+								<div className='whatsapp-icon-glow'></div>
+								<img
+									src="https://cdn-icons-png.flaticon.com/256/2111/2111646.png" // URL to Telegram icon 
+									alt="WhatsApp Icon"
+									className='w-7 rounded-full whatsapp-icon'
+								/>
+							</div>
+							<span className='text-lg hidden md:block'>Instagram</span>
+						</a>
+					</li>
+
+
+
+
+
 				</ul>
 				{authUser && (
 					<Link
