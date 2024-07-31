@@ -1,12 +1,13 @@
 import XSvg from "../svgs/X";
 
-import { MdHomeFilled } from "react-icons/md";
+import { MdHomeFilled , MdMessage } from "react-icons/md";
 import { IoNotifications } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { BiLogOut } from "react-icons/bi";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import toast from "react-hot-toast";
+
 
 import './WhatsAppButton.css'; // Ensure to import the CSS file
 
@@ -41,7 +42,7 @@ const Sidebar = () => {
 		<div className='md:flex-[2_2_0] w-18 max-w-52'>
 			<div className='sticky top-0 left-0 h-screen flex flex-col border-r border-gray-700 w-20 md:w-full'>
 				<Link to='/' className='flex justify-center md:justify-start'>
-					<XSvg className='px-2 w-12 h-12 rounded-full fill-white hover:bg-stone-900' />
+					<XSvg className='px-2 w-20  rounded-full fill-white hover:bg-stone-900' />
 				</Link>
 				<ul className='flex flex-col gap-3 mt-4'>
 					<li className='flex justify-center md:justify-start'>
@@ -72,12 +73,26 @@ const Sidebar = () => {
 							<span className='text-lg hidden md:block'>Profile</span>
 						</Link>
 					</li>
+   
 
+					<li className='flex justify-center md:justify-start'>
+      
+          <a href="https://dummy-succ-client.onrender.com"
+          className='flex gap-3 items-center hover:bg-stone-900 transition-all rounded-full duration-300 py-2 pl-2 pr-4 max-w-fit cursor-pointer'
+       >
+          <MdMessage className='w-6 h-6' />
+          <span className='text-lg hidden md:block'>Messages</span>
+		  </a>
+      </li>
+
+
+
+				
 
 
 					<li className='flex justify-center md:justify-start'>
 						<a
-							href="https://wa.me/7306370344?text=Hello!%20How%20can%20I%20help%20you?" // Replace with your phone number and message 
+							href="https://wa.me/1234567890?text=Hello!%20How%20can%20I%20help%20you?" // Replace with your phone number and message 
 							target="_blank"
 							rel="noopener noreferrer"
 							className='flex gap-3 items-center hover:bg-stone-900 transition-all rounded-full duration-300 py-2 pl-2 pr-4 max-w-fit cursor-pointer'
@@ -125,14 +140,14 @@ const Sidebar = () => {
 							className='flex gap-3 items-center hover:bg-stone-900 transition-all rounded-full duration-300 py-2 pl-2 pr-4 max-w-fit cursor-pointer'
 						>
 							<div className='whatsapp-icon-container'>
-								
+								<div className='whatsapp-icon-glow'></div>
 								<img
 									src="https://cdn-icons-png.flaticon.com/256/2111/2111646.png" // URL to Telegram icon 
 									alt="WhatsApp Icon"
 									className='w-7 rounded-full whatsapp-icon'
 								/>
 							</div>
-							<span className='text-lg hidden md:block'>Telegram</span>
+							<span className='text-lg hidden md:block'>Instagram</span>
 						</a>
 					</li>
 
