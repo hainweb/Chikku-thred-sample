@@ -139,15 +139,14 @@ const Sidebar = () => {
 							rel="noopener noreferrer"
 							className='flex gap-3 items-center hover:bg-stone-900 transition-all rounded-full duration-300 py-2 pl-2 pr-4 max-w-fit cursor-pointer'
 						>
-							<div className='whatsapp-icon-container'>
-								<div className='whatsapp-icon-glow'></div>
+							
 								<img
 									src="https://cdn-icons-png.flaticon.com/256/2111/2111646.png" // URL to Telegram icon 
 									alt="WhatsApp Icon"
 									className='w-7 rounded-full whatsapp-icon'
 								/>
-							</div>
-							<span className='text-lg hidden md:block'>Instagram</span>
+							
+							<span className='text-lg hidden md:block'>Telegram</span>
 						</a>
 					</li>
 
