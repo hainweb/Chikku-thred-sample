@@ -92,13 +92,13 @@ const Sidebar = () => {
 
 					<li className='flex justify-center md:justify-start'>
 						<a
-							// href="https://wa.me/1234567890?text=Hello!%20How%20can%20I%20help%20you?" // Replace with your phone number and message 
+							 href="https://wa.me/1234567890?text=Hello!%20How%20can%20I%20help%20you?" // Replace with your phone number and message 
 							target="_blank"
 							rel="noopener noreferrer"
 							className='flex gap-3 items-center hover:bg-stone-900 transition-all rounded-full duration-300 py-2 pl-2 pr-4 max-w-fit cursor-pointer'
 						>
 							<div className='whatsapp-icon-container'>
-								
+										<div className='whatsapp-icon-glow'></div>
 								<img
 									src="https://cdn-icons-png.freepik.com/256/15707/15707917.png?semt=ais_hybrid"
 									alt="WhatsApp Icon"
@@ -115,12 +115,12 @@ const Sidebar = () => {
 					<li className='flex justify-center md:justify-start'>
 						<a
 							
-							// href="https://www.instagram.com/ajwwwnn" // Replace with your Instagram username 	target="_blank"
+							 href="https://www.instagram.com/ajwwwnn" // Replace with your Instagram username 	target="_blank"
 							rel="noopener noreferrer"
 							className='flex gap-3 items-center hover:bg-stone-900 transition-all rounded-full duration-300 py-2 pl-2 pr-4 max-w-fit cursor-pointer'
 						>
 							<div className='whatsapp-icon-container'>
-								
+										<div className='whatsapp-icon-glow'></div>
 								<img
 									src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/800px-Instagram_logo_2022.svg.png" // URL to Instagram icon 
 
@@ -150,6 +150,46 @@ const Sidebar = () => {
 							<span className='text-lg hidden md:block'>Telegram</span>
 						</a>
 					</li>
+
+
+					<li className='flex justify-center md:justify-start'>
+						<a
+							
+							//href="https://t.me/ajwwwnn" // Replace with your Telegram username 
+							rel="noopener noreferrer"
+							className='flex gap-3 items-center hover:bg-stone-900 transition-all rounded-full duration-300 py-2 pl-2 pr-4 max-w-fit cursor-pointer'
+						>
+							<div className='whatsapp-icon-container'>
+								
+								<img
+									src="https://cdn-icons-png.flaticon.com/512/1383/1383266.png" // URL to Telegram icon 
+									alt="WhatsApp Icon"
+									className='w-7 rounded-full whatsapp-icon'
+								/>
+							</div>
+							<span className='text-lg hidden md:block'>SnapChat</span>
+						</a>
+					</li>
+
+					<li className='flex justify-center md:justify-start'>
+						<a
+							
+							//href="https://t.me/ajwwwnn" // Replace with your Telegram username 
+							rel="noopener noreferrer"
+							className='flex gap-3 items-center hover:bg-stone-900 transition-all rounded-full duration-300 py-2 pl-2 pr-4 max-w-fit cursor-pointer'
+						>
+							<div className='whatsapp-icon-container'>
+								
+								<img
+									src="https://static.cdnlogo.com/logos/f/35/facebook.png" // URL to Telegram icon 
+									alt="WhatsApp Icon"
+									className='w-7 rounded-full whatsapp-icon'
+								/>
+							</div>
+							<span className='text-lg hidden md:block'>Facebook</span>
+						</a>
+					</li>
+
 
 
 
